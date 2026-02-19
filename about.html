@@ -18,8 +18,21 @@
                 <a href="portfolio.html">시공사례</a>
                 <a href="contact.html">문의하기</a>
             </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기">
+                <span class="hamburger"></span>
+            </button>
         </div>
     </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="about.html" class="active">회사소개</a>
+            <a href="services.html">서비스</a>
+            <a href="portfolio.html">시공사례</a>
+            <a href="contact.html">문의하기</a>
+        </nav>
+    </div>
 
     <main>
         <section class="section page-header">
@@ -61,6 +74,14 @@
             <p>&copy; 2024 CleanPro Service. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
 
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
