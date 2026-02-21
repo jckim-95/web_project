@@ -246,6 +246,24 @@ main {
 .contact-info li {
     margin-bottom: 0.5rem;
 }
+
+.contact-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -454,7 +472,23 @@ main {
     line-height: 1.8;
 }
 
-.project-gallery {
+.project-gallery-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.gallery-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.gallery-column .gallery-item {
+    margin-bottom: 1.5rem;
+}
+
+.project-gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
@@ -572,4 +606,58 @@ main {
     .project-content h2 {
         font-size: 1.5rem;
     }
+}
+
+/* --- Floating Buttons --- */
+.floating-buttons {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 1000;
+}
+
+.float-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.float-btn:hover {
+    transform: scale(1.1);
+}
+
+.call-btn {
+    background-color: #28a745; /* Green for call */
+}
+.call-btn:hover {
+    background-color: #218838;
+}
+
+.kakao-btn {
+    background-color: #FEE500; /* Kakao yellow */
+    color: #3C1E1E;
+}
+.kakao-btn:hover {
+    background-color: #f2da00;
+}
+
+#scrollToTopBtn {
+    background-color: var(--text-secondary);
+    display: none; /* Initially hidden */
+}
+#scrollToTopBtn:hover {
+    background-color: var(--text-dark);
 }

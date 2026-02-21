@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시공사례: 서초구 B아파트 입주 청소 - CleanPro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="project-detail-page">
@@ -47,22 +48,28 @@
                     <p>인테리어 공사 후 남은 미세먼지와 유해물질을 제거하고, 새집증후군 방지 시공까지 완료하여 안심하고 입주하실 수 있도록 준비했습니다.</p>
                     
                     <h2>작업 전/후 사진</h2>
-                    <div class="project-gallery">
-                        <div class="gallery-item">
-                            <img src="../images/placeholder.svg" alt="작업 전 주방">
-                            <p class="caption">작업 전 주방 싱크대</p>
+                    <div class="project-gallery-2col">
+                        <div class="gallery-column">
+                            <h3 style="text-align: center;">작업 전</h3>
+                            <div class="gallery-item">
+                                <img src="../images/placeholder.svg" alt="작업 전 주방">
+                                <p class="caption">작업 전 주방 싱크대</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../images/placeholder.svg" alt="작업 전 화장실">
+                                <p class="caption">작업 전 화장실</p>
+                            </div>
                         </div>
-                        <div class="gallery-item">
-                            <img src="../images/placeholder.svg" alt="작업 후 주방">
-                            <p class="caption">작업 후 주방 싱크대</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/placeholder.svg" alt="작업 전 화장실">
-                            <p class="caption">작업 전 화장실</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/placeholder.svg" alt="작업 후 화장실">
-                            <p class="caption">작업 후 화장실</p>
+                        <div class="gallery-column">
+                            <h3 style="text-align: center;">작업 후</h3>
+                            <div class="gallery-item">
+                                <img src="../images/placeholder.svg" alt="작업 후 주방">
+                                <p class="caption">작업 후 주방 싱크대</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../images/placeholder.svg" alt="작업 후 화장실">
+                                <p class="caption">작업 후 화장실</p>
+                            </div>
                         </div>
                     </div>
 
@@ -79,10 +86,49 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 CleanPro Service. All rights reserved.</p>
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+        <div>
+            <h3 class="text-white text-lg font-bold mb-4">CleanPro (다올 워크스)</h3>
+            <p class="text-sm leading-relaxed">
+                전문가의 손길로 완성되는 완벽한 청결함.<br>
+                울산 지역 최고의 기업/학교 청소 전문 파트너입니다.
+            </p>
         </div>
+
+        <div class="text-sm space-y-2">
+            <h4 class="text-white font-semibold mb-4">사업자 정보</h4>
+            <p>상호: 다올 워크스 | 대표: 홍길동</p>
+            <p>사업자등록번호: 000-00-00000</p>
+            <p>주소: 울산광역시 중구 태화강국가정원길</p>
+        </div>
+
+        <div>
+            <h4 class="text-white font-semibold mb-4">고객센터</h4>
+            <p class="text-lg text-white mb-2">010-1234-5678</p>
+            <p class="text-sm mb-4">평일 09:00 - 18:00 (주말/공휴일 휴무)</p>
+            <div class="flex gap-4 text-base">
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-white"><i class="fa-solid fa-comment"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-slate-800 text-xs text-center">
+        <p>© 2026 CleanPro Service. All rights reserved.</p>
+    </div>
     </footer>
+
+    <div class="floating-buttons">
+        <a href="tel:010-1234-5678" class="float-btn call-btn" aria-label="전화 문의">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://pf.kakao.com/_some_id" target="_blank" class="float-btn kakao-btn" aria-label="카카오톡 문의">
+            <i class="fas fa-comment"></i>
+        </a>
+        <button id="scrollToTopBtn" class="float-btn" aria-label="맨 위로 이동">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
 
     <script>
         const navToggle = document.getElementById('nav-toggle');
@@ -92,6 +138,28 @@
             navToggle.classList.toggle('active');
             mobileNav.classList.toggle('active');
         });
+        
+        // Scroll to top button functionality
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        
+        if (scrollToTopBtn) {
+            window.onscroll = function() {
+                // Show button if scrolled down 100px
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    scrollToTopBtn.style.display = "flex";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            };
+
+            scrollToTopBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     </script>
 </body>
 </html>
