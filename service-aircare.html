@@ -35,7 +35,23 @@
                 <a href="contact.html" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">문의하기</a>
             </div>
             
-            <button class="lg:hidden text-2xl text-slate-600"><i class="fa-solid fa-bars"></i></button>
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl text-slate-600">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden">
+            <div class="px-6 pt-2 pb-6 flex flex-col gap-4 text-center">
+                <a href="index.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">홈</a>
+                <a href="about.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">회사 소개</a>
+                <a href="service-ventilation.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">환기시스템 케어</a>
+                <a href="service-ac.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">에어컨 분해 세척</a>
+                <a href="service-commercial.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">상업/공공시설 청소</a>
+                <a href="service-aircare.html" class="block py-2 text-blue-600 font-bold">실내 공기질 관리</a>
+                <a href="portfolio.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600 border-t border-slate-200 mt-2 pt-4">시공 사례</a>
+                <a href="contact.html" class="block py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700">문의하기</a>
+            </div>
         </div>
     </nav>
 
@@ -144,7 +160,7 @@
             <div class="grid md:grid-cols-3 gap-12 mb-12">
                 <div>
                     <h3 class="text-white text-3xl font-black tracking-tighter mb-4">
-                        Daolworks<span class="text-blue-500">.</span>
+                        다올웍스<span class="text-blue-500">.</span>
                     </h3>
                     <p class="text-slate-400 text-sm leading-relaxed font-medium">
                         전문가의 시선으로 공간을 재해석합니다.<br>
@@ -167,10 +183,47 @@
                 </div>
             </div>
             <div class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
-                <p>© 2026 Daolworks Service. All rights reserved.</p>
+                <p class="mb-4">© 2026 다올웍스 Service. All rights reserved.</p>
+                <button id="pc-version-toggle" class="text-slate-400 hover:text-white transition">PC 버전 보기</button>
             </div>
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const viewport = document.querySelector('meta[name="viewport"]');
+            const toggleBtn = document.getElementById('pc-version-toggle');
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = mobileMenuBtn.querySelector('i');
+
+            function setViewport(isPc) {
+                if (isPc) {
+                    viewport.setAttribute('content', 'width=1280');
+                    toggleBtn.textContent = '모바일 버전 보기';
+                    localStorage.setItem('viewMode', 'pc');
+                } else {
+                    viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+                    toggleBtn.textContent = 'PC 버전 보기';
+                    localStorage.setItem('viewMode', 'mobile');
+                }
+            }
+
+            toggleBtn.addEventListener('click', function() {
+                const isPc = localStorage.getItem('viewMode') === 'pc';
+                setViewport(!isPc);
+            });
+
+            mobileMenuBtn.addEventListener('click', function() {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                menuIcon.className = isHidden ? 'fa-solid fa-bars' : 'fa-solid fa-times';
+            });
+
+            // Apply saved mode on page load
+            if (localStorage.getItem('viewMode') === 'pc') {
+                setViewport(true);
+            }
+        });
+    </script>
 </body>
 </html>
