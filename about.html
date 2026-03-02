@@ -8,7 +8,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         .about-hero {
-            /* 회사 소개 배경 이미지 (깔끔한 사무실이나 청결한 공간 이미지 추천) */
             background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
@@ -25,14 +24,12 @@
             
             <div class="hidden lg:flex items-center gap-6 text-[15px] font-semibold text-slate-600">
                 <a href="index.html" class="hover:text-blue-600 transition-colors">홈</a>
-                <a href="about.html" class="hover:text-blue-600 text-blue-600 transition-colors">회사 소개</a>
-                <a href="service-ventilation.html" class="hover:text-blue-600 transition-colors">환기시스템 케어</a>
+                <a href="about.html" class="text-blue-600 font-bold transition-colors">회사 소개</a>
+                <a href="service-ventilation.html" class="hover:text-blue-600 transition-colors">공기순환기 & 공기질 케어</a>
                 <a href="service-ac.html" class="hover:text-blue-600 transition-colors">에어컨 분해 세척</a>
-                <a href="service-commercial.html" class="hover:text-blue-600 transition-colors">상업/공공시설 청소</a>
-                <a href="service-aircare.html" class="hover:text-blue-600 transition-colors">실내 공기질 관리</a>
-                
+                <a href="service-commercial.html" class="hover:text-blue-600 transition-colors">학교/공공기관 관리</a>
                 <a href="portfolio.html" class="hover:text-blue-600 transition-colors ml-4 border-l border-slate-300 pl-4">시공 사례</a>
-                <a href="contact.html" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">문의하기</a>
+                <a href="contact.html" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">문의/무료점검</a>
             </div>
             
             <button id="mobile-menu-btn" class="lg:hidden text-2xl text-slate-600">
@@ -40,17 +37,15 @@
             </button>
         </div>
         
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden">
             <div class="px-6 pt-2 pb-6 flex flex-col gap-4 text-center">
                 <a href="index.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">홈</a>
                 <a href="about.html" class="block py-2 text-blue-600 font-bold">회사 소개</a>
-                <a href="service-ventilation.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">환기시스템 케어</a>
+                <a href="service-ventilation.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">공기순환기 & 공기질 케어</a>
                 <a href="service-ac.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">에어컨 분해 세척</a>
-                <a href="service-commercial.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">상업/공공시설 청소</a>
-                <a href="service-aircare.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">실내 공기질 관리</a>
+                <a href="service-commercial.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">학교/공공기관 관리</a>
                 <a href="portfolio.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600 border-t border-slate-200 mt-2 pt-4">시공 사례</a>
-                <a href="contact.html" class="block py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700">문의하기</a>
+                <a href="contact.html" class="block py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700">문의/무료점검</a>
             </div>
         </div>
     </nav>
@@ -58,10 +53,10 @@
     <header class="about-hero pt-32 pb-40 text-center relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-6 relative z-10">
             <h1 class="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
-                우리는 공간의 <span class="text-blue-400">기준</span>을 세웁니다.
+                우리는 공간 관리의 <span class="text-blue-400">기준</span>을 바꿉니다.
             </h1>
             <p class="text-lg text-slate-300 font-light leading-relaxed">
-                표면의 먼지를 닦아내는 것을 넘어, 당신이 머무는 공간의 공기까지 책임지는<br class="hidden md:block">
+                비용 거품은 빼고, 보이지 않는 곳의 공기질까지 책임지는<br class="hidden md:block">
                 프리미엄 공간 케어 솔루션, 다올웍스입니다.
             </p>
         </div>
@@ -71,24 +66,24 @@
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-white p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 text-center">
                 <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
+                    <i class="fa-solid fa-won-sign"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">합리적인 비용 구조</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">중간 유통 마진을 없앤 자재 직접 공급 시스템으로, 타사 대비 30~40% 절감된 정직한 비용을 약속합니다.</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 text-center">
+                <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
                     <i class="fa-solid fa-microscope"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">과학적 진단</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">직감에 의존하지 않습니다. 전문 측정 장비를 통해 오염도를 수치화하고, 데이터에 기반한 정확한 솔루션을 제안합니다.</p>
+                <h3 class="text-xl font-bold mb-3">과학적인 정밀 진단</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">단순한 육안 검사를 넘어 전문 장비로 공기질과 오염도를 측정하고, 데이터에 기반한 확실한 해결책을 제시합니다.</p>
             </div>
             <div class="bg-white p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 text-center">
                 <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
-                    <i class="fa-solid fa-eye-slash"></i>
+                    <i class="fa-solid fa-file-signature"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">보이지 않는 곳까지</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">에어컨 내부, 환기시스템 덕트 등 일반적인 청소로는 닿을 수 없는 공간의 근본적인 오염원을 완벽하게 제거합니다.</p>
-            </div>
-            <div class="bg-white p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 text-center">
-                <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
-                    <i class="fa-solid fa-leaf"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">안전한 친환경 약품</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">사람과 환경에 무해한 인증받은 전용 세척제만을 사용하여, 케어 직후에도 안심하고 일상생활을 하실 수 있습니다.</p>
+                <h3 class="text-xl font-bold mb-3">투명한 행정 및 관리</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">학교 및 관공서 규정에 맞춘 완벽한 서류 제출과, 시공 전후의 투명한 관리 이력 리포트를 제공합니다.</p>
             </div>
         </div>
     </section>
@@ -106,26 +101,26 @@
             <div>
                 <h2 class="text-blue-600 font-bold tracking-widest text-sm mb-3">CEO MESSAGE</h2>
                 <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-8 leading-tight">
-                    "기술과 정성으로<br>건강한 숨을 약속합니다."
+                    "비용은 낮추고,<br>품질은 높이겠습니다."
                 </h3>
                 
                 <div class="space-y-6 text-slate-600 leading-relaxed">
                     <p class="bg-yellow-50 border-l-4 border-yellow-400 p-4 text-sm text-yellow-800">
-                        <strong>[작성 가이드 1: 창업 계기]</strong><br>
-                        (예시) 안녕하십니까, 다올웍스 대표 OOO입니다. 과거 엔지니어로 근무하며 첨단 산업 현장의 공조 시스템을 다루던 중, 정작 우리가 가장 많은 시간을 보내는 일상 공간의 공기질 관리가 턱없이 부족하다는 사실을 깨달았습니다.
+                        <strong>[작성 가이드 1: 문제 의식과 창업 계기]</strong><br>
+                        (예시) 안녕하십니까, 다올웍스 대표 이민재입니다. 그동안 많은 학교와 공공기관 현장을 경험하며, '왜 공조기 유지보수 비용은 이렇게 비싸기만 할까?'라는 의문을 가졌습니다. 불필요한 중간 유통 과정이 기관의 예산 낭비로 이어지고 있었습니다.
                     </p>
                     <p class="bg-yellow-50 border-l-4 border-yellow-400 p-4 text-sm text-yellow-800">
-                        <strong>[작성 가이드 2: 서비스의 차별점/철학]</strong><br>
-                        (예시) 그래서 저는 '단순한 노동'이 아닌 '정교한 기술'로 공간을 케어하는 다올웍스를 설립했습니다. 겉으로 보이는 먼지만을 닦는 것이 아니라, 오염의 원인을 진단하고 환기시스템의 효율을 극대화하는 과학적인 유지보수를 제공합니다.
+                        <strong>[작성 가이드 2: 다올웍스만의 해결책]</strong><br>
+                        (예시) 그래서 다올웍스는 필터 직접 공급 구조를 구축했습니다. 타사 대비 30~40% 예산을 절감하면서도, 프리미엄 필터 교체와 체계적인 내부 오염 세척 등 품질은 오히려 대폭 끌어올렸습니다.
                     </p>
                     <p class="bg-yellow-50 border-l-4 border-yellow-400 p-4 text-sm text-yellow-800">
                         <strong>[작성 가이드 3: 고객을 향한 다짐]</strong><br>
-                        (예시) 다올웍스는 고객님의 가정, 학교, 그리고 일터가 가장 쾌적하고 안전한 공간이 될 수 있도록 끊임없이 연구하겠습니다. 정직한 시공, 투명한 과정, 완벽한 결과로 보답하겠습니다.
+                        (예시) 예산은 아끼고 쾌적함은 오래 유지하시길 바랍니다. 다올웍스는 꼼꼼한 행정 처리와 투명한 시공 이력 관리를 통해 기관 담당자님들의 든든한 파트너가 되겠습니다.
                     </p>
                 </div>
                 
                 <div class="mt-10">
-                    <p class="font-bold text-lg text-slate-900">다올웍스 대표 <span class="text-2xl ml-2 font-black">O O O</span></p>
+                    <p class="font-bold text-lg text-slate-900">다올웍스 대표 <span class="text-2xl ml-2 font-black">이 민 재</span></p>
                 </div>
             </div>
         </div>
@@ -134,24 +129,24 @@
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-black text-slate-900 mb-4">다올웍스의 전문성</h2>
-            <p class="text-slate-600 mb-16">프리미엄 서비스에 걸맞은 최상위 등급의 장비와 전문 인력을 보유하고 있습니다.</p>
+            <p class="text-slate-600 mb-16">다년간의 현장 노하우와 철저한 준비로 고객의 신뢰에 보답합니다.</p>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50">
-                    <h4 class="font-bold text-slate-900 mb-2">[장비/인증 1 입력]</h4>
-                    <p class="text-xs text-slate-500">독일제 고압 스팀 살균기 보유</p>
+                    <h4 class="font-bold text-slate-900 mb-2">직접 공급 시스템</h4>
+                    <p class="text-xs text-slate-500">필터 유통 구조 혁신</p>
                 </div>
                 <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50">
-                    <h4 class="font-bold text-slate-900 mb-2">[장비/인증 2 입력]</h4>
-                    <p class="text-xs text-slate-500">실내 공기질 정밀 측정기</p>
+                    <h4 class="font-bold text-slate-900 mb-2">정밀 측정 진단</h4>
+                    <p class="text-xs text-slate-500">실내 공기질 데이터화</p>
                 </div>
                 <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50">
-                    <h4 class="font-bold text-slate-900 mb-2">[팀원 자격 입력]</h4>
-                    <p class="text-xs text-slate-500">전문 교육 이수 정직원 시공</p>
+                    <h4 class="font-bold text-slate-900 mb-2">행정 서류 완비</h4>
+                    <p class="text-xs text-slate-500">시험 성적 및 이력 보고</p>
                 </div>
                 <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50">
-                    <h4 class="font-bold text-slate-900 mb-2">[친환경 인증 입력]</h4>
-                    <p class="text-xs text-slate-500">환경부 인증 친환경 세제 사용</p>
+                    <h4 class="font-bold text-slate-900 mb-2">안전 책임 시공</h4>
+                    <p class="text-xs text-slate-500">영업배상 책임보험 가입</p>
                 </div>
             </div>
         </div>
@@ -162,25 +157,25 @@
             <div class="grid md:grid-cols-3 gap-12 mb-12">
                 <div>
                     <h3 class="text-white text-3xl font-black tracking-tighter mb-4">
-                    다올웍스<span class="text-blue-500">.</span>
+                        다올웍스<span class="text-blue-500">.</span>
                     </h3>
                     <p class="text-slate-400 text-sm leading-relaxed font-medium">
-                        전문가의 시선으로 공간을 재해석합니다.<br>
-                        프리미엄 클리닝 & 환기 유지보수 솔루션.
+                        비용은 낮추고 품질은 높입니다.<br>
+                        공기순환기 필터 교체 연간 유지보수 전문.
                     </p>
                 </div>
                 <div class="text-sm space-y-2 text-slate-400">
                     <h4 class="text-white font-semibold mb-4 text-base">사업자 정보</h4>
-                    <p>상호: 다올웍스 | 대표: OOO</p>
+                    <p>상호: 다올웍스 | 대표: 이민재</p>
                     <p>사업자등록번호: 000-00-00000</p>
                     <p>본사: 울산광역시 중구 태화강국가정원길</p>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4">고객센터 / 견적문의</h4>
-                    <p class="text-3xl font-bold text-white mb-2">010-1234-5678</p>
+                    <h4 class="text-white font-semibold mb-4">고객센터 / 무료 점검 문의</h4>
+                    <p class="text-3xl font-bold text-blue-400 mb-2">010-8563-5805</p>
                     <p class="text-slate-400 text-sm mb-6">평일 09:00 - 18:00 (주말/공휴일 휴무)</p>
-                    <a href="#" class="inline-flex items-center gap-2 bg-yellow-400 text-yellow-900 px-6 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors">
-                        <i class="fa-solid fa-comment"></i> 카카오톡 문의
+                    <a href="tel:010-8563-5805" class="inline-flex items-center gap-2 bg-yellow-400 text-yellow-900 px-6 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors">
+                        <i class="fa-solid fa-phone"></i> 견적/점검 문의
                     </a>
                 </div>
             </div>
@@ -190,6 +185,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
+        <a href="tel:010-8563-5805" class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition-all text-xl" aria-label="전화 문의">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="#" target="_blank" class="w-14 h-14 bg-[#FEE500] text-[#371D1E] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all text-2xl" aria-label="카카오톡 문의">
+            <i class="fa-solid fa-comment"></i>
+        </a>
+        <button id="scrollToTopBtn" class="w-12 h-12 bg-slate-800 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-slate-700 transition-all text-lg opacity-0 pointer-events-none self-end mt-2" aria-label="맨 위로 이동">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -224,9 +231,25 @@
                 setViewport(!isPc);
             });
 
-            // Apply saved mode on page load
             if (localStorage.getItem('viewMode') === 'pc') {
                 setViewport(true);
+            }
+
+            // 플로팅 버튼 위로 가기 스크립트 추가
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (scrollToTopBtn) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                        scrollToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+                    } else {
+                        scrollToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+                        scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                    }
+                });
+                scrollToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
             }
         });
     </script>

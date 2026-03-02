@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문의하기 - 다올웍스</title>
+    <title>문의/무료점검 - 다올웍스</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         .contact-hero {
-            /* 신뢰감을 주는 고객 상담 모습이나 깔끔한 데스크 배경 이미지 추천 */
             background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
-        /* 폼 입력창 포커스 시 테두리 애니메이션 */
         .form-input:focus { outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); }
     </style>
 </head>
@@ -28,31 +26,26 @@
             <div class="hidden lg:flex items-center gap-6 text-[15px] font-semibold text-slate-600">
                 <a href="index.html" class="hover:text-blue-600 transition-colors">홈</a>
                 <a href="about.html" class="hover:text-blue-600 transition-colors">회사 소개</a>
-                <a href="service-ventilation.html" class="hover:text-blue-600 transition-colors">환기시스템 케어</a>
+                <a href="service-ventilation.html" class="hover:text-blue-600 transition-colors">공기순환기 & 공기질 케어</a>
                 <a href="service-ac.html" class="hover:text-blue-600 transition-colors">에어컨 분해 세척</a>
-                <a href="service-commercial.html" class="hover:text-blue-600 transition-colors">상업/공공시설 청소</a>
-                <a href="service-aircare.html" class="hover:text-blue-600 transition-colors">실내 공기질 관리</a>
-                
+                <a href="service-commercial.html" class="hover:text-blue-600 transition-colors">학교/공공기관 관리</a>
                 <a href="portfolio.html" class="hover:text-blue-600 transition-colors ml-4 border-l border-slate-300 pl-4">시공 사례</a>
-                <a href="contact.html" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">문의하기</a>
-            </div>
+                <a href="contact.html" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors font-bold">문의/무료점검</a> </div>
             
             <button id="mobile-menu-btn" class="lg:hidden text-2xl text-slate-600">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
         
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden">
             <div class="px-6 pt-2 pb-6 flex flex-col gap-4 text-center">
                 <a href="index.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">홈</a>
                 <a href="about.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">회사 소개</a>
-                <a href="service-ventilation.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">환기시스템 케어</a>
+                <a href="service-ventilation.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">공기순환기 & 공기질 케어</a>
                 <a href="service-ac.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">에어컨 분해 세척</a>
-                <a href="service-commercial.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">상업/공공시설 청소</a>
-                <a href="service-aircare.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">실내 공기질 관리</a>
+                <a href="service-commercial.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">학교/공공기관 관리</a>
                 <a href="portfolio.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600 border-t border-slate-200 mt-2 pt-4">시공 사례</a>
-                <a href="contact.html" class="block py-2 text-blue-600 font-bold">문의하기</a>
+                <a href="contact.html" class="block py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700">문의/무료점검</a>
             </div>
         </div>
     </nav>
@@ -63,8 +56,8 @@
                 무엇을 <span class="text-blue-400">도와드릴까요?</span>
             </h1>
             <p class="text-lg text-slate-300 font-light leading-relaxed">
-                궁금한 점이 있으시거나 무료 방문 견적이 필요하시다면 언제든 편하게 연락해 주세요.<br class="hidden md:block">
-                다올웍스의 전문가가 빠르고 친절하게 답변해 드립니다.
+                궁금한 점이 있으시거나 무료 방문 점검이 필요하시다면 언제든 편하게 연락해 주세요.<br class="hidden md:block">
+                다올웍스의 전문가가 가장 합리적인 관리 예산을 산출해 드립니다.
             </p>
         </div>
     </header>
@@ -74,9 +67,9 @@
             
             <div class="lg:w-2/5 bg-slate-900 text-white p-12 flex flex-col justify-between">
                 <div>
-                    <h2 class="text-3xl font-bold mb-8">연락 정보</h2>
+                    <h2 class="text-3xl font-bold mb-8">무료 점검 문의</h2>
                     <p class="text-slate-400 mb-10 leading-relaxed">
-                        공간의 크기, 기기 대수, 오염도에 따라 정확한 견적이 달라질 수 있습니다. 부담 없이 연락 주시면 상세히 안내해 드리겠습니다.
+                        공간의 크기, 장비 대수, 현재 관리 상태에 따라 최적의 솔루션이 달라집니다. 부담 없이 연락 주시면 상세히 진단해 드리겠습니다.
                     </p>
                     
                     <ul class="space-y-6">
@@ -85,8 +78,8 @@
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
-                                <p class="text-sm text-slate-400 mb-1">대표 전화</p>
-                                <p class="font-bold text-lg">010-1234-5678</p>
+                                <p class="text-sm text-slate-400 mb-1">견적 및 점검 문의</p>
+                                <p class="font-bold text-lg">010-8563-5805</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-4">
@@ -113,13 +106,13 @@
                 <div class="mt-12 space-y-4">
                     <p class="text-sm text-slate-400 border-b border-slate-700 pb-4 mb-4">
                         <i class="fa-regular fa-clock mr-2"></i>운영시간: 평일 09:00 - 18:00<br>
-                        <span class="text-xs text-slate-500 ml-5">* 주말 및 공휴일은 사전 예약 시 시공 가능합니다.</span>
+                        <span class="text-xs text-slate-500 ml-5">* 주말 및 공휴일은 사전 예약 시 점검/시공 가능합니다.</span>
                     </p>
-                    <a href="tel:010-1234-5678" class="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-500 transition-all">
-                        <i class="fa-solid fa-phone mr-2"></i> 전화로 문의하기
+                    <a href="tel:010-8563-5805" class="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-500 transition-all">
+                        <i class="fa-solid fa-phone mr-2"></i> 전화로 점검 신청하기
                     </a>
                     <a href="#" class="block w-full bg-[#FEE500] text-[#371D1E] text-center py-4 rounded-xl font-bold hover:bg-[#F4DC00] transition-all">
-                        <i class="fa-solid fa-comment mr-2"></i> 카카오톡 문의하기
+                        <i class="fa-solid fa-comment mr-2"></i> 카카오톡 비용 문의
                     </a>
                 </div>
             </div>
@@ -131,8 +124,8 @@
                 <form action="#" method="POST" class="space-y-6">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <label for="name" class="block text-sm font-semibold text-slate-700 mb-2">이름 / 회사명 <span class="text-red-500">*</span></label>
-                            <input type="text" id="name" name="name" required placeholder="홍길동 또는 (주)다올" 
+                            <label for="name" class="block text-sm font-semibold text-slate-700 mb-2">이름 / 기관명 <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="예: 홍길동 또는 OOO학교" 
                                 class="form-input w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 transition-all">
                         </div>
                         <div>
@@ -148,11 +141,10 @@
                             <select id="service-type" name="service-type" required
                                 class="form-input w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 appearance-none transition-all cursor-pointer">
                                 <option value="" disabled selected>필요하신 서비스를 선택해 주세요</option>
-                                <option value="ventilation">환기시스템 케어 (전열교환기 등)</option>
-                                <option value="ac">전문 에어컨 분해 세척</option>
-                                <option value="commercial">상업/공공시설 대청소 및 왁스 코팅</option>
-                                <option value="aircare">실내 공기질 정기 관리 (구독형)</option>
-                                <option value="other">기타 문의 및 맞춤 상담</option>
+                                <option value="ventilation">공기순환기(전열교환기) 유지보수 및 필터 교체</option>
+                                <option value="ac">전문 에어컨 대량 분해 세척</option>
+                                <option value="commercial">학교/공공기관 대청소 및 정기 관리</option>
+                                <option value="other">기타 문의 및 무료 방문 점검 신청</option>
                             </select>
                             <div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-slate-500">
                                 <i class="fa-solid fa-chevron-down text-sm"></i>
@@ -162,13 +154,13 @@
 
                     <div>
                         <label for="address" class="block text-sm font-semibold text-slate-700 mb-2">현장 주소 <span class="text-slate-400 font-normal ml-1">(선택)</span></label>
-                        <input type="text" id="address" name="address" placeholder="대략적인 주소 (예: 울산 남구 삼산동 40평 오피스)" 
+                        <input type="text" id="address" name="address" placeholder="대략적인 주소 (예: 울산 남구 삼산동)" 
                             class="form-input w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 transition-all">
                     </div>
 
                     <div>
                         <label for="message" class="block text-sm font-semibold text-slate-700 mb-2">상세 문의 내용 <span class="text-red-500">*</span></label>
-                        <textarea id="message" name="message" rows="5" required placeholder="기기 수량, 평수, 현재 겪고 계신 문제(예: 에어컨 냄새, 분진) 등을 자세히 적어주시면 더 정확한 안내가 가능합니다." 
+                        <textarea id="message" name="message" rows="5" required placeholder="기기 수량, 공간 평수, 현재 겪고 계신 문제(예: 에어컨 냄새, 예산 초과) 등을 자세히 적어주시면 더 정확한 안내가 가능합니다." 
                             class="form-input w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 transition-all resize-none"></textarea>
                     </div>
 
@@ -192,19 +184,19 @@
                         다올웍스<span class="text-blue-500">.</span>
                     </h3>
                     <p class="text-slate-400 text-sm leading-relaxed font-medium">
-                        전문가의 시선으로 공간을 재해석합니다.<br>
-                        프리미엄 클리닝 & 환기 유지보수 솔루션.
+                        비용은 낮추고 품질은 높입니다.<br>
+                        공기순환기 필터 교체 연간 유지보수 전문.
                     </p>
                 </div>
                 <div class="text-sm space-y-2 text-slate-400">
                     <h4 class="text-white font-semibold mb-4 text-base">사업자 정보</h4>
-                    <p>상호: 다올웍스 | 대표: OOO</p>
+                    <p>상호: 다올웍스 | 대표: 이민재</p>
                     <p>사업자등록번호: 000-00-00000</p>
                     <p>본사: 울산광역시 중구 태화강국가정원길</p>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4">고객센터 / 견적문의</h4>
-                    <p class="text-3xl font-bold text-white mb-2">010-1234-5678</p>
+                    <h4 class="text-white font-semibold mb-4">고객센터 / 무료 점검 문의</h4>
+                    <p class="text-3xl font-bold text-blue-400 mb-2">010-8563-5805</p>
                     <p class="text-slate-400 text-sm mb-6">평일 09:00 - 18:00 (주말/공휴일 휴무)</p>
                 </div>
             </div>
@@ -216,7 +208,7 @@
     </footer>
 
     <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
-        <a href="tel:010-1234-5678" class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition-all text-xl" aria-label="전화 문의">
+        <a href="tel:010-8563-5805" class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition-all text-xl" aria-label="전화 문의">
             <i class="fa-solid fa-phone"></i>
         </a>
         <a href="#" target="_blank" class="w-14 h-14 bg-[#FEE500] text-[#371D1E] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all text-2xl" aria-label="카카오톡 문의">

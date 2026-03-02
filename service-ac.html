@@ -8,8 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         .ac-hero {
-            /* 시원하고 깨끗한 에어컨 바람이나 맑은 실내 느낌의 배경 이미지 추천 */
-            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1527689638836-411945a2b57c?q=80&w=2000&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1527689638836-411945a2b57c?q=80&w=2000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
@@ -26,13 +25,11 @@
             <div class="hidden lg:flex items-center gap-6 text-[15px] font-semibold text-slate-600">
                 <a href="index.html" class="hover:text-blue-600 transition-colors">홈</a>
                 <a href="about.html" class="hover:text-blue-600 transition-colors">회사 소개</a>
-                <a href="service-ventilation.html" class="hover:text-blue-600 transition-colors">환기시스템 케어</a>
-                <a href="service-ac.html" class="hover:text-blue-600 text-blue-600 transition-colors">에어컨 분해 세척</a>
-                <a href="service-commercial.html" class="hover:text-blue-600 transition-colors">상업/공공시설 청소</a>
-                <a href="service-aircare.html" class="hover:text-blue-600 transition-colors">실내 공기질 관리</a>
-                
+                <a href="service-ventilation.html" class="hover:text-blue-600 transition-colors">공기순환기 & 공기질 케어</a>
+                <a href="service-ac.html" class="text-blue-600 font-bold transition-colors">에어컨 분해 세척</a>
+                <a href="service-commercial.html" class="hover:text-blue-600 transition-colors">학교/공공기관 관리</a>
                 <a href="portfolio.html" class="hover:text-blue-600 transition-colors ml-4 border-l border-slate-300 pl-4">시공 사례</a>
-                <a href="contact.html" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">문의하기</a>
+                <a href="contact.html" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">문의/무료점검</a>
             </div>
             
             <button id="mobile-menu-btn" class="lg:hidden text-2xl text-slate-600">
@@ -40,127 +37,96 @@
             </button>
         </div>
         
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden">
             <div class="px-6 pt-2 pb-6 flex flex-col gap-4 text-center">
                 <a href="index.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">홈</a>
                 <a href="about.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">회사 소개</a>
-                <a href="service-ventilation.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">환기시스템 케어</a>
+                <a href="service-ventilation.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">공기순환기 & 공기질 케어</a>
                 <a href="service-ac.html" class="block py-2 text-blue-600 font-bold">에어컨 분해 세척</a>
-                <a href="service-commercial.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">상업/공공시설 청소</a>
-                <a href="service-aircare.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">실내 공기질 관리</a>
+                <a href="service-commercial.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">학교/공공기관 관리</a>
                 <a href="portfolio.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600 border-t border-slate-200 mt-2 pt-4">시공 사례</a>
-                <a href="contact.html" class="block py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700">문의하기</a>
+                <a href="contact.html" class="block py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700">문의/무료점검</a>
             </div>
         </div>
     </nav>
 
     <header class="ac-hero pt-32 pb-48 text-center relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-6 relative z-10">
-            <span class="inline-block bg-blue-500/20 text-blue-300 border border-blue-400/30 px-4 py-1.5 rounded-full text-sm font-bold mb-6 backdrop-blur-sm">
-                여름철 필수 케어 솔루션
+            <span class="inline-block bg-blue-500 text-white px-5 py-2 rounded-full text-sm font-bold mb-6 shadow-lg shadow-blue-500/30">
+                학교·공공기관 및 기업 대량 세척 전문
             </span>
             <h1 class="text-4xl md:text-6xl font-black text-white mb-8 tracking-tight leading-tight">
-                불쾌한 냄새의 원인,<br>
-                <span class="text-blue-400">완전 분해 세척</span>으로 뽑아냅니다.
+                비용은 낮추고 품질은 높이는<br>
+                <span class="text-blue-400">에어컨 완전 분해 세척</span>
             </h1>
             <p class="text-lg text-slate-300 font-light leading-relaxed max-w-2xl mx-auto">
-                에어컨을 틀었을 때 퀴퀴한 냄새가 난다면, 이미 내부는 곰팡이 군락지입니다. 겉만 닦는 청소가 아닌, 부품을 완전히 분해하여 고압 세척하는 진짜 에어컨 케어를 경험하세요.
+                에어컨 내부의 곰팡이는 호흡기 건강과 냉방 효율 저하의 주범입니다.<br>
+                다올웍스만의 투명한 견적과 체계적인 관리 프로세스로 완벽한 세척 결과를 약속드립니다.
             </p>
         </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-6 -mt-24 relative z-20 pb-32">
-        <div class="grid lg:grid-cols-3 gap-12">
+        <div class="max-w-5xl mx-auto space-y-16">
             
-            <div class="lg:col-span-2 space-y-16">
-                
-                <div class="bg-white p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
-                    <h2 class="text-2xl font-bold mb-6 text-slate-900 border-b border-slate-100 pb-4 flex items-center gap-3">
-                        <i class="fa-solid fa-triangle-exclamation text-yellow-500"></i> 호흡기 건강을 위협하는 에어컨 곰팡이
-                    </h2>
-                    <p class="text-slate-600 leading-relaxed mb-8">
-                        에어컨은 작동 원리상 내부에 결로(물기)가 생길 수밖에 없습니다. 이 물기가 먼지와 엉켜 열교환기와 드레인 판(물받이)에 곰팡이를 번식시킵니다. 오염된 에어컨 바람은 실내 공기를 악화시키고, 알레르기나 호흡기 질환의 직접적인 원인이 되며, 냉방 효율까지 뚝 떨어뜨립니다. 
-                    </p>
-
-                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 text-sm text-yellow-800 rounded-r-xl">
-                        <strong class="block mb-2 text-base"><i class="fa-solid fa-images mr-2"></i>[작성 가이드 1: 분해 세척 전/후 극적인 비교 사진]</strong>
-                        고객이 가장 충격을 받는 사진은 먼지가 떡진 '송풍팬(블로어 팬)'과 까맣게 핀 '물받이 판'입니다. 고압 세척 전의 새까만 부품과 세척 후 원래 색을 되찾은 부품 사진을 꼭 넣어주세요.
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-2xl font-bold mb-8 text-slate-900">빈틈없는 다올웍스 에어컨 세척 프로세스</h3>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
-                            <div class="absolute -right-4 -top-4 text-7xl font-black text-slate-50 opacity-50 z-0">01</div>
-                            <div class="relative z-10">
-                                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-5"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                                <h4 class="text-lg font-bold text-slate-900 mb-3">작동 점검 및 완전 분해</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">세척 전 기기의 정상 작동 여부를 점검한 뒤, 프론트 패널, 송풍팬, 필터, 물받이 등 세척이 필요한 모든 부품을 안전하게 분해합니다.</p>
-                            </div>
-                        </div>
-                        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
-                            <div class="absolute -right-4 -top-4 text-7xl font-black text-slate-50 opacity-50 z-0">02</div>
-                            <div class="relative z-10">
-                                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-5"><i class="fa-solid fa-water"></i></div>
-                                <h4 class="text-lg font-bold text-slate-900 mb-3">냉각핀 친환경 고압 세척</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">에어컨의 심장인 열교환기(냉각핀)에 인체에 무해한 친환경 전용 약품을 도포하고, 고압 세척기로 깊숙히 박힌 곰팡이와 먼지를 뚫어냅니다.</p>
-                            </div>
-                        </div>
-                        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
-                            <div class="absolute -right-4 -top-4 text-7xl font-black text-slate-50 opacity-50 z-0">03</div>
-                            <div class="relative z-10">
-                                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-5"><i class="fa-solid fa-biohazard"></i></div>
-                                <h4 class="text-lg font-bold text-slate-900 mb-3">드레인 판(물받이) 살균</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">세균 번식이 가장 심각한 드레인 판을 따로 분리하여 악취의 원인을 제거하고, 스팀 살균을 통해 위생적으로 케어합니다.</p>
-                            </div>
-                        </div>
-                        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
-                            <div class="absolute -right-4 -top-4 text-7xl font-black text-slate-50 opacity-50 z-0">04</div>
-                            <div class="relative z-10">
-                                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-5"><i class="fa-solid fa-wind"></i></div>
-                                <h4 class="text-lg font-bold text-slate-900 mb-3">살균 건조 및 시운전</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">세척된 부품을 송풍 건조 및 UV 살균한 뒤 재조립합니다. 마지막으로 시운전을 통해 냉방 성능과 냄새 제거를 확실히 확인합니다.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-10 rounded-3xl border border-slate-100">
-                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 text-sm text-yellow-800 rounded-r-xl">
-                        <strong class="block mb-2 text-base"><i class="fa-solid fa-list mr-2"></i>[작성 가이드 2: 에어컨 종류별 요금 안내표]</strong>
-                        벽걸이, 스탠드, 1way 시스템(천장형), 4way 시스템 에어컨 등 기종별 기본 단가를 기재해 주시면 고객의 빠른 결정을 돕습니다. (예: "2대 이상 동시 진행 시 할인" 같은 문구도 효과적입니다.)
-                    </div>
-                </div>
-
+            <div class="bg-white p-10 md:p-14 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 border-t-4 border-t-blue-600">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-slate-900 border-b border-slate-100 pb-4 flex items-center gap-3">
+                    <i class="fa-solid fa-building-circle-check text-blue-500 bg-blue-50 w-12 h-12 rounded-full flex items-center justify-center text-xl"></i>
+                    학교 및 공공기관 맞춤 운영 구조
+                </h2>
+                <p class="text-slate-600 leading-relaxed mb-8 text-lg">
+                    대량의 에어컨 세척이 필요한 학교와 기업의 경우, 단순 청소 역량뿐만 아니라 <strong>투명한 견적과 완벽한 행정 처리</strong>가 필수적입니다. 다올웍스는 다수 수행 경험을 바탕으로 관리 누락 없는 시스템을 제공합니다.
+                </p>
+                <ul class="grid md:grid-cols-2 gap-5 text-slate-700 font-medium">
+                    <li class="flex items-center gap-3 bg-slate-50 p-4 rounded-xl"><i class="fa-solid fa-check-circle text-blue-500 text-xl"></i> 검증된 시험 성적 및 친환경 약품 사용</li>
+                    <li class="flex items-center gap-3 bg-slate-50 p-4 rounded-xl"><i class="fa-solid fa-check-circle text-blue-500 text-xl"></i> 세금계산서 및 행정 제출 자료 완비</li>
+                    <li class="flex items-center gap-3 bg-slate-50 p-4 rounded-xl"><i class="fa-solid fa-check-circle text-blue-500 text-xl"></i> 방문 전/후 세척 사진 상세 보고</li>
+                    <li class="flex items-center gap-3 bg-slate-50 p-4 rounded-xl"><i class="fa-solid fa-check-circle text-blue-500 text-xl"></i> 체계적인 장비 관리 이력 기록</li>
+                </ul>
             </div>
 
-            <div class="lg:col-span-1">
-                <div class="sticky top-28 space-y-6">
-                    <div class="bg-blue-600 text-white p-8 rounded-3xl shadow-xl shadow-blue-200 text-center">
-                        <h4 class="text-xl font-bold mb-4">여름이 오기 전,<br>미리 예약하세요.</h4>
-                        <p class="text-blue-100 text-sm mb-8 leading-relaxed">가정용 투인원부터<br>학교/관공서 대량 세척까지<br>완벽하게 수행합니다.</p>
-                        
-                        <a href="tel:010-1234-5678" class="block w-full bg-white text-blue-600 font-bold py-4 rounded-xl mb-4 hover:shadow-lg transition-all flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-phone"></i> 무료 견적 010-1234-5678
-                        </a>
-                        <a href="#" class="block w-full bg-[#FEE500] text-[#371D1E] font-bold py-4 rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-comment"></i> 카카오톡 대량/기업 문의
-                        </a>
+            <div>
+                <h3 class="text-2xl md:text-3xl font-bold mb-8 text-slate-900">빈틈없는 에어컨 세척 4단계 프로세스</h3>
+                <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+                    <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 text-7xl font-black text-slate-50 opacity-50 z-0">01</div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-3">작동 점검 및 완전 분해</h4>
+                            <p class="text-slate-600 leading-relaxed">세척 전 기기의 정상 작동 여부를 진단하고 프론트 패널, 송풍팬, 필터, 물받이 등을 안전하게 완전 분해합니다.</p>
+                        </div>
                     </div>
+                    <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 text-7xl font-black text-slate-50 opacity-50 z-0">02</div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6"><i class="fa-solid fa-water"></i></div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-3">냉각핀 친환경 고압 세척</h4>
+                            <p class="text-slate-600 leading-relaxed">에어컨의 심장인 열교환기(냉각핀)에 인체 무해 친환경 약품을 도포하고 고압 세척으로 곰팡이와 먼지를 뚫어냅니다.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 text-7xl font-black text-slate-50 opacity-50 z-0">03</div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6"><i class="fa-solid fa-biohazard"></i></div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-3">드레인 판(물받이) 살균</h4>
+                            <p class="text-slate-600 leading-relaxed">세균 번식이 가장 심각한 드레인 판을 따로 분리하여 악취 원인을 제거하고, 스팀 살균을 통해 위생적으로 케어합니다.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 text-7xl font-black text-slate-50 opacity-50 z-0">04</div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6"><i class="fa-solid fa-file-signature"></i></div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-3">건조/시운전 및 결과 보고</h4>
+                            <p class="text-slate-600 leading-relaxed">송풍 건조 및 조립 후 시운전을 통해 성능을 확인하며, 기관 담당자님께 세척 전/후 사진을 포함한 결과 리포트를 제출합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="bg-white p-6 rounded-3xl border border-slate-100 text-center space-y-4">
-                        <div class="flex items-center justify-center gap-3 text-slate-700 font-medium">
-                            <i class="fa-solid fa-droplet text-blue-500 text-xl"></i> 고압 세척 전문 장비
-                        </div>
-                        <div class="flex items-center justify-center gap-3 text-slate-700 font-medium">
-                            <i class="fa-solid fa-leaf text-green-500 text-xl"></i> 인체 무해 친환경 약품
-                        </div>
-                        <div class="flex items-center justify-center gap-3 text-slate-700 font-medium">
-                            <i class="fa-solid fa-building text-slate-400 text-xl"></i> 기업체 정기 관리 특화
-                        </div>
-                    </div>
+            <div class="bg-white p-10 md:p-14 rounded-3xl border border-slate-100 shadow-sm">
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 text-sm text-yellow-800 rounded-r-xl">
+                    <strong class="block mb-2 text-base"><i class="fa-solid fa-images mr-2"></i>[작성 가이드 1: 에어컨 분해 세척 전/후 극적인 사진]</strong>
+                    먼지가 떡진 '송풍팬'과 까맣게 핀 '물받이 판'의 고압 세척 전/후 비교 사진을 배치해 주세요. 고객의 신뢰도와 문의율을 크게 높일 수 있습니다. (기종별 단가표를 함께 넣으시면 더욱 좋습니다.)
                 </div>
             </div>
 
@@ -175,22 +141,22 @@
                         다올웍스<span class="text-blue-500">.</span>
                     </h3>
                     <p class="text-slate-400 text-sm leading-relaxed font-medium">
-                        전문가의 시선으로 공간을 재해석합니다.<br>
-                        프리미엄 클리닝 & 환기 유지보수 솔루션.
+                        비용은 낮추고 품질은 높입니다.<br>
+                        공기순환기 필터 교체 연간 유지보수 전문.
                     </p>
                 </div>
                 <div class="text-sm space-y-2 text-slate-400">
                     <h4 class="text-white font-semibold mb-4 text-base">사업자 정보</h4>
-                    <p>상호: 다올웍스 | 대표: OOO</p>
+                    <p>상호: 다올웍스 | 대표: 이민재</p>
                     <p>사업자등록번호: 000-00-00000</p>
                     <p>본사: 울산광역시 중구 태화강국가정원길</p>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4">고객센터 / 견적문의</h4>
-                    <p class="text-3xl font-bold text-white mb-2">010-1234-5678</p>
+                    <h4 class="text-white font-semibold mb-4">고객센터 / 무료 점검 문의</h4>
+                    <p class="text-3xl font-bold text-blue-400 mb-2">010-8563-5805</p>
                     <p class="text-slate-400 text-sm mb-6">평일 09:00 - 18:00 (주말/공휴일 휴무)</p>
-                    <a href="#" class="inline-flex items-center gap-2 bg-yellow-400 text-yellow-900 px-6 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors">
-                        <i class="fa-solid fa-comment"></i> 카카오톡 문의
+                    <a href="tel:010-8563-5805" class="inline-flex items-center gap-2 bg-yellow-400 text-yellow-900 px-6 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors">
+                        <i class="fa-solid fa-phone"></i> 견적/점검 문의
                     </a>
                 </div>
             </div>
@@ -200,6 +166,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
+        <a href="tel:010-8563-5805" class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition-all text-xl" aria-label="전화 문의">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="#" target="_blank" class="w-14 h-14 bg-[#FEE500] text-[#371D1E] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all text-2xl" aria-label="카카오톡 문의">
+            <i class="fa-solid fa-comment"></i>
+        </a>
+        <button id="scrollToTopBtn" class="w-12 h-12 bg-slate-800 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-slate-700 transition-all text-lg opacity-0 pointer-events-none self-end mt-2" aria-label="맨 위로 이동">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -234,9 +212,25 @@
                 setViewport(!isPc);
             });
 
-            // Apply saved mode on page load
             if (localStorage.getItem('viewMode') === 'pc') {
                 setViewport(true);
+            }
+
+            // 플로팅 버튼 위로 가기 스크립트
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (scrollToTopBtn) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                        scrollToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+                    } else {
+                        scrollToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+                        scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                    }
+                });
+                scrollToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
             }
         });
     </script>

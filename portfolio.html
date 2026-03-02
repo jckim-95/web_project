@@ -8,7 +8,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         .portfolio-hero {
-            /* 신뢰감을 주는 깨끗한 시공 현장이나 정돈된 공간 배경 추천 */
             background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
@@ -26,13 +25,10 @@
             <div class="hidden lg:flex items-center gap-6 text-[15px] font-semibold text-slate-600">
                 <a href="index.html" class="hover:text-blue-600 transition-colors">홈</a>
                 <a href="about.html" class="hover:text-blue-600 transition-colors">회사 소개</a>
-                <a href="service-ventilation.html" class="hover:text-blue-600 transition-colors">환기시스템 케어</a>
+                <a href="service-ventilation.html" class="hover:text-blue-600 transition-colors">공기순환기 & 공기질 케어</a>
                 <a href="service-ac.html" class="hover:text-blue-600 transition-colors">에어컨 분해 세척</a>
-                <a href="service-commercial.html" class="hover:text-blue-600 transition-colors">상업/공공시설 청소</a>
-                <a href="service-aircare.html" class="hover:text-blue-600 transition-colors">실내 공기질 관리</a>
-                
-                <a href="portfolio.html" class="hover:text-blue-600 text-blue-600 transition-colors ml-4 border-l border-slate-300 pl-4">시공 사례</a>
-                <a href="contact.html" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">문의하기</a>
+                <a href="service-commercial.html" class="hover:text-blue-600 transition-colors">학교/공공기관 관리</a>
+                <a href="portfolio.html" class="text-blue-600 font-bold transition-colors ml-4 border-l border-slate-300 pl-4">시공 사례</a> <a href="contact.html" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">문의/무료점검</a>
             </div>
             
             <button id="mobile-menu-btn" class="lg:hidden text-2xl text-slate-600">
@@ -40,17 +36,15 @@
             </button>
         </div>
         
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden">
             <div class="px-6 pt-2 pb-6 flex flex-col gap-4 text-center">
                 <a href="index.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">홈</a>
                 <a href="about.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">회사 소개</a>
-                <a href="service-ventilation.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">환기시스템 케어</a>
+                <a href="service-ventilation.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">공기순환기 & 공기질 케어</a>
                 <a href="service-ac.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">에어컨 분해 세척</a>
-                <a href="service-commercial.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">상업/공공시설 청소</a>
-                <a href="service-aircare.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">실내 공기질 관리</a>
+                <a href="service-commercial.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">학교/공공기관 관리</a>
                 <a href="portfolio.html" class="block py-2 text-blue-600 font-bold border-t border-slate-200 mt-2 pt-4">시공 사례</a>
-                <a href="contact.html" class="block py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700">문의하기</a>
+                <a href="contact.html" class="block py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700">문의/무료점검</a>
             </div>
         </div>
     </nav>
@@ -74,17 +68,17 @@
                 <div class="grid grid-cols-2 gap-1 bg-slate-200 p-2">
                     <div class="aspect-square bg-slate-300 rounded-xl relative overflow-hidden flex items-center justify-center">
                         <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">Before</span>
-                        <div class="text-slate-500 text-sm text-center px-4"><i class="fa-solid fa-image text-3xl mb-2 opacity-50"></i><br>오염된 덕트 사진</div>
+                        <div class="text-slate-500 text-sm text-center px-4"><i class="fa-solid fa-image text-3xl mb-2 opacity-50"></i><br>오염된 덕트/필터</div>
                     </div>
                     <div class="aspect-square bg-slate-300 rounded-xl relative overflow-hidden flex items-center justify-center">
                         <span class="absolute top-3 left-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">After</span>
-                        <div class="text-slate-500 text-sm text-center px-4"><i class="fa-solid fa-image text-3xl mb-2 opacity-50"></i><br>케어 후 깨끗한 덕트</div>
+                        <div class="text-slate-500 text-sm text-center px-4"><i class="fa-solid fa-image text-3xl mb-2 opacity-50"></i><br>새 필터 및 세척 완료</div>
                     </div>
                 </div>
                 <div class="p-8 flex-grow">
-                    <span class="inline-block text-xs font-bold text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full mb-4">환기시스템 케어</span>
-                    <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">울산 남구 OOO 공공기관 전열교환기 클리닝</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">준공 후 5년간 방치되었던 환기 덕트 내부의 묵은 먼지와 곰팡이를 로봇 장비와 고압 스팀으로 완벽하게 제거했습니다.</p>
+                    <span class="inline-block text-xs font-bold text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full mb-4">공기순환기 & 공기질 케어</span>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">울산 남구 OOO 공공기관 전열교환기 클리닝 및 필터 교체</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">준공 후 방치되었던 환기 기기 내부의 묵은 먼지를 고압 스팀으로 제거하고, 직공급 필터로 예산을 절감하여 교체해 드렸습니다.</p>
                 </div>
             </a>
 
@@ -101,8 +95,8 @@
                 </div>
                 <div class="p-8 flex-grow">
                     <span class="inline-block text-xs font-bold text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full mb-4">에어컨 분해 세척</span>
-                    <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">울산 중구 OOO 기업 시스템 에어컨 40대 세척</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">악취가 심했던 오피스 시스템 에어컨을 완전 분해하여 드레인 판의 세균과 송풍팬의 찌든 때를 친환경 약품으로 제거했습니다.</p>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">울산 중구 OOO 학교 시스템 에어컨 40대 세척</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">교실 내 악취가 심했던 시스템 에어컨을 완전 분해하여 드레인 판의 세균과 송풍팬의 찌든 때를 친환경 약품으로 제거하고 검증 보고서를 제출했습니다.</p>
                 </div>
             </a>
 
@@ -110,7 +104,7 @@
                 <div class="grid grid-cols-2 gap-1 bg-slate-200 p-2">
                     <div class="aspect-square bg-slate-300 rounded-xl relative overflow-hidden flex items-center justify-center">
                         <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">Before</span>
-                        <div class="text-slate-500 text-sm text-center px-4"><i class="fa-solid fa-image text-3xl mb-2 opacity-50"></i><br>오염된 복도 바닥</div>
+                        <div class="text-slate-500 text-sm text-center px-4"><i class="fa-solid fa-image text-3xl mb-2 opacity-50"></i><br>스크래치 난 강당 바닥</div>
                     </div>
                     <div class="aspect-square bg-slate-300 rounded-xl relative overflow-hidden flex items-center justify-center">
                         <span class="absolute top-3 left-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">After</span>
@@ -118,9 +112,9 @@
                     </div>
                 </div>
                 <div class="p-8 flex-grow">
-                    <span class="inline-block text-xs font-bold text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full mb-4">상업/공공시설 청소</span>
+                    <span class="inline-block text-xs font-bold text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full mb-4">학교/공공기관 관리</span>
                     <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">울산 북구 OOO 초등학교 강당 바닥 박리/왁싱</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">오랜 사용으로 스크래치와 오염이 누적된 강당 마루 바닥의 기존 왁스를 샌딩하고 최고급 코팅제로 새것처럼 복원했습니다.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">오랜 사용으로 스크래치와 오염이 누적된 강당 마루 바닥의 기존 왁스를 샌딩하고 최고급 코팅제로 새것처럼 광택을 복원했습니다.</p>
                 </div>
             </a>
 
@@ -128,17 +122,17 @@
                 <div class="grid grid-cols-2 gap-1 bg-slate-200 p-2">
                     <div class="aspect-square bg-slate-300 rounded-xl relative overflow-hidden flex items-center justify-center">
                         <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">Before</span>
-                        <div class="text-slate-500 text-sm text-center px-4"><i class="fa-solid fa-image text-3xl mb-2 opacity-50"></i><br>공사 직후 분진</div>
+                        <div class="text-slate-500 text-sm text-center px-4"><i class="fa-solid fa-image text-3xl mb-2 opacity-50"></i><br>먼지 쌓인 환기구</div>
                     </div>
                     <div class="aspect-square bg-slate-300 rounded-xl relative overflow-hidden flex items-center justify-center">
                         <span class="absolute top-3 left-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">After</span>
-                        <div class="text-slate-500 text-sm text-center px-4"><i class="fa-solid fa-image text-3xl mb-2 opacity-50"></i><br>준공 청소 완료</div>
+                        <div class="text-slate-500 text-sm text-center px-4"><i class="fa-solid fa-image text-3xl mb-2 opacity-50"></i><br>소독 및 청소 완료</div>
                     </div>
                 </div>
                 <div class="p-8 flex-grow">
-                    <span class="inline-block text-xs font-bold text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full mb-4">상업/공공시설 청소</span>
-                    <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">울주군 신축 프랜차이즈 카페 준공 청소</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">인테리어 공사 후 발생한 엄청난 양의 백시멘트 분진과 공사 잔여물을 특수 청소 장비로 제거하여 즉시 영업 가능한 상태로 세팅했습니다.</p>
+                    <span class="inline-block text-xs font-bold text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full mb-4">학교/공공기관 관리</span>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">울주군 OOO 관공서 대청소 및 실내 공기질 점검</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">천장형 기기와 환기구 등 손이 닿지 않는 곳을 집중적으로 딥클리닝하고 실내 미세먼지 수치를 측정하여 쾌적도를 높였습니다.</p>
                 </div>
             </a>
 
@@ -159,20 +153,23 @@
                         다올웍스<span class="text-blue-500">.</span>
                     </h3>
                     <p class="text-slate-400 text-sm leading-relaxed font-medium">
-                        전문가의 시선으로 공간을 재해석합니다.<br>
-                        프리미엄 클리닝 & 환기 유지보수 솔루션.
+                        비용은 낮추고 품질은 높입니다.<br>
+                        공기순환기 필터 교체 연간 유지보수 전문.
                     </p>
                 </div>
                 <div class="text-sm space-y-2 text-slate-400">
                     <h4 class="text-white font-semibold mb-4 text-base">사업자 정보</h4>
-                    <p>상호: 다올웍스 | 대표: OOO</p>
+                    <p>상호: 다올웍스 | 대표: 이민재</p>
                     <p>사업자등록번호: 000-00-00000</p>
                     <p>본사: 울산광역시 중구 태화강국가정원길</p>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4">고객센터 / 견적문의</h4>
-                    <p class="text-3xl font-bold text-white mb-2">010-1234-5678</p>
+                    <h4 class="text-white font-semibold mb-4">고객센터 / 무료 점검 문의</h4>
+                    <p class="text-3xl font-bold text-blue-400 mb-2">010-8563-5805</p>
                     <p class="text-slate-400 text-sm mb-6">평일 09:00 - 18:00 (주말/공휴일 휴무)</p>
+                    <a href="tel:010-8563-5805" class="inline-flex items-center gap-2 bg-yellow-400 text-yellow-900 px-6 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors">
+                        <i class="fa-solid fa-phone"></i> 견적/점검 문의
+                    </a>
                 </div>
             </div>
             <div class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
@@ -183,7 +180,7 @@
     </footer>
 
     <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
-        <a href="tel:010-1234-5678" class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition-all text-xl" aria-label="전화 문의">
+        <a href="tel:010-8563-5805" class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition-all text-xl" aria-label="전화 문의">
             <i class="fa-solid fa-phone"></i>
         </a>
         <a href="#" target="_blank" class="w-14 h-14 bg-[#FEE500] text-[#371D1E] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all text-2xl" aria-label="카카오톡 문의">
@@ -197,7 +194,6 @@
     <script>
         const scrollToTopBtn = document.getElementById('scrollToTopBtn');
         
-        // 스크롤 양에 따라 버튼 보이기/숨기기
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
@@ -208,7 +204,6 @@
             }
         });
 
-        // 클릭 시 맨 위로 부드럽게 이동
         scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
@@ -248,7 +243,6 @@
                 setViewport(!isPc);
             });
 
-            // Apply saved mode on page load
             if (localStorage.getItem('viewMode') === 'pc') {
                 setViewport(true);
             }
