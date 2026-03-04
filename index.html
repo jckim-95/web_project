@@ -18,13 +18,13 @@
 
     <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 shadow-sm">
         <div class="max-w-[1400px] mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-black text-blue-600 tracking-tighter">
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-black text-blue-600 tracking-tighter">
+                <img src="assets/daolworks-logo.jpg" alt="다올웍스 로고" class="h-10 w-auto object-contain">
                 다올웍스<span class="text-blue-400">.</span>
             </a>
             
             <div class="hidden lg:flex items-center gap-6 text-[15px] font-semibold text-slate-600">
-                <a href="index.html" class="hover:text-blue-600 text-blue-600 transition-colors">홈</a>
-                <a href="about.html" class="hover:text-blue-600 transition-colors">회사 소개</a>
+                <a href="#" class="text-blue-600 font-bold transition-colors" onclick="window.scrollTo(0,0); return false;">다올웍스 홈</a>
                 <a href="service-ventilation.html" class="hover:text-blue-600 transition-colors">공기순환기 & 공기질 케어</a>
                 <a href="service-ac.html" class="hover:text-blue-600 transition-colors">에어컨 분해 세척</a>
                 <a href="service-commercial.html" class="hover:text-blue-600 transition-colors">학교/공공기관 관리</a>
@@ -39,8 +39,7 @@
         
         <div id="mobile-menu" class="hidden lg:hidden">
             <div class="px-6 pt-2 pb-6 flex flex-col gap-4 text-center">
-                <a href="index.html" class="block py-2 text-blue-600 font-bold">홈</a>
-                <a href="about.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">회사 소개</a>
+                <a href="#" class="block py-2 text-blue-600 font-bold" onclick="window.scrollTo(0,0); return false;">다올웍스 홈</a>
                 <a href="service-ventilation.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">공기순환기 & 공기질 케어</a>
                 <a href="service-ac.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">에어컨 분해 세척</a>
                 <a href="service-commercial.html" class="block py-2 text-slate-600 font-semibold hover:text-blue-600">학교/공공기관 관리</a>
@@ -54,43 +53,205 @@
         <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
             <div class="max-w-3xl">
                 <span class="inline-block bg-blue-500/20 text-blue-300 border border-blue-400/30 px-4 py-1.5 rounded-full text-sm font-bold mb-6 backdrop-blur-sm">
-                    공기순환기 필터 교체 연간 유지보수 전문
+                    실내 공기질 토탈 솔루션 & 필터 직접 생산 기업
                 </span>
                 <h1 class="text-5xl md:text-7xl font-black text-white leading-[1.2] mb-8 tracking-tight">
-                    비용은 낮추고,<br><span class="text-blue-400">품질은 높입니다.</span>
+                    보이지 않는 공기의 질,<br>이제 <span class="text-blue-400">전문가의 관리</span>가 필수입니다.
                 </h1>
                 <p class="text-xl text-slate-300 leading-relaxed mb-10 font-light max-w-2xl">
-                    지금 사용 중인 유지관리 비용, 정말 합리적이십니까?<br>
-                    다올웍스는 <strong class="text-white font-bold">필터 직접 공급 구조</strong>를 통해 
-                    <strong class="text-yellow-400 font-bold">타사 대비 최대 30~40% 절감된 비용</strong>으로 확실한 관리 서비스를 제공합니다.
+                    밀폐된 실내의 오염된 공기는 일상의 컨디션과 건강을 조용히 위협합니다.<br>
+                    단순한 장비 청소를 넘어, 공간의 쾌적함을 되찾는 <strong class="text-white font-bold">진짜 공기질 케어</strong>가 필요합니다.<br><br>
+                    다올웍스는 필터 직접 생산 라인과 국가 인증 기술력을 바탕으로, <strong class="text-yellow-400 font-bold">비용은 타사 대비 30~40% 낮추고 공기의 품질은 극대화하는</strong> 완벽한 솔루션을 제공합니다.
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="tel:010-8563-5805" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-500 transition-all flex items-center gap-2 shadow-lg shadow-blue-500/30">
                         <i class="fa-solid fa-stethoscope"></i> 현 상태 무료 점검받기
-                    </a>
-                    <a href="#services" class="bg-white/10 text-white border border-white/30 backdrop-blur-sm px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all flex items-center gap-2">
-                        서비스 전체보기 <i class="fa-solid fa-arrow-down"></i>
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="about" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-blue-600 font-bold tracking-widest text-sm mb-3">ABOUT 다올웍스</h2>
-            <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-8">차이가 보이는 실질적인 유지 관리</h3>
-            <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                다올웍스는 각 공간의 특성을 분석하여 최적의 케어 솔루션을 제공합니다. 전문 장비와 친환경 약품, 그리고 다년간의 학교 및 공공시설 유지 관리 경험이 결합되어 눈에 보이지 않는 유해물질까지 완벽하게 제어합니다.
-            </p>
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-600 font-bold tracking-widest text-sm mb-3">WHY IT MATTERS</h2>
+                <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-6">숨 쉬는 공간의 가치, 공기가 결정합니다.</h3>
+                <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                    공기는 우리가 매 순간 마주하는 가장 기본적이고 중요한 요소입니다.<br>
+                    <strong>공기순환기(전열교환기)</strong>는 실내의 오염된 공기를 밖으로 배출하고, 외부의 신선한 공기를 필터로 정화하여 실내로 공급하는 필수 환기 장치입니다.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="w-full aspect-square md:aspect-[4/3] bg-slate-100 rounded-3xl border border-slate-200 overflow-hidden relative">
+                <img src="assets/filter-warning.jpg" alt="오염된 필터 이미지" class="w-full h-full object-cover">
+                </div>
+                
+                <div>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-8">필터, 왜 반드시 <span class="text-red-500">정기적인 관리</span>가 필요할까요?</h4>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-red-50 text-red-500 rounded-xl flex items-center justify-center shrink-0 text-xl"><i class="fa-solid fa-virus-slash"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg text-slate-900 mb-1">정화 능력 상실</h5>
+                                <p class="text-slate-600 leading-relaxed">오염된 필터는 미세먼지와 세균을 제대로 걸러내지 못해 실내 공기를 오히려 악화시킵니다.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center shrink-0 text-xl"><i class="fa-solid fa-wind"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg text-slate-900 mb-1">환기 효율 저하</h5>
+                                <p class="text-slate-600 leading-relaxed">먼지로 막힌 필터는 공기의 흐름을 방해하여 본연의 환기 효과를 크게 떨어뜨립니다.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-yellow-50 text-yellow-600 rounded-xl flex items-center justify-center shrink-0 text-xl"><i class="fa-solid fa-bolt"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg text-slate-900 mb-1">모터 고장 및 전기료 증가</h5>
+                                <p class="text-slate-600 leading-relaxed">막힌 공기 길은 모터에 과부하를 주어 고장 위험을 높이고, 불필요한 전기 요금을 상승시킵니다.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-pink-50 text-pink-500 rounded-xl flex items-center justify-center shrink-0 text-xl"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg text-slate-900 mb-1">건강에 대한 위협</h5>
+                                <p class="text-slate-600 leading-relaxed">지속적인 실내 공기 악화는 알레르기 및 호흡기 질환 등 공간에 머무는 이들의 건강에 직접적인 악영향을 줍니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="services" class="py-24 bg-slate-50 border-t border-slate-200">
+    <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-blue-900/20 mix-blend-multiply"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-24">
+                <div>
+                    <h2 class="text-blue-400 font-bold tracking-widest text-sm mb-3">ABOUT 다올웍스</h2>
+                    <h3 class="text-3xl md:text-5xl font-black mb-8 leading-tight">단순 청소가 아닌<br>제조사의 기술력입니다.</h3>
+                    <p class="text-slate-300 leading-relaxed mb-6 text-lg">
+                        다올웍스는 공기순환기와 필터를 직접 생산하는 공장을 보유한 검증된 기업입니다. 불필요한 중간 유통 과정이 없기에, 관공서와 학교에 타사 대비 30~40% 예산을 절감하면서도 최고 등급의 제품과 딥클리닝을 제공합니다.
+                    </p>
+                    <ul class="space-y-3 font-medium text-slate-200 mb-10">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> 자사 공장 직접 생산으로 비용 거품 제거</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> KS인증, 조달우수제품 등 객관적 품질 검증</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> 완벽한 행정 서류 및 시공 이력 리포트 제공</li>
+                    </ul>
+                    <p class="font-bold text-xl">다올웍스 대표 이민재</p>
+                </div>
+
+                <div class="space-y-8">
+                    <div>
+                        <p class="text-blue-400 text-xs font-bold mb-3 uppercase tracking-wider ml-1">공기 순환기 생산 공장</p>
+                        <div class="flex overflow-x-auto gap-4 scrollbar-hide snap-x snap-mandatory pb-2">
+                            <div class="flex-shrink-0 w-[85%] aspect-video bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden snap-center">
+                                <img src="assets/factory-1.png" alt="공기순환기 공장 1" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-shrink-0 w-[85%] aspect-video bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden snap-center">
+                                <img src="assets/factory-2.png" alt="공기순환기 공장 2" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-shrink-0 w-[85%] aspect-video bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden snap-center">
+                                <img src="assets/factory-3.png" alt="공기순환기 공장 3" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-blue-400 text-xs font-bold mb-3 uppercase tracking-wider ml-1">공기 순환기 필터 생산 공장</p>
+                        <div class="flex overflow-x-auto gap-4 scrollbar-hide snap-x snap-mandatory pb-2">
+                            <div class="flex-shrink-0 w-[85%] aspect-video bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden snap-center">
+                                <img src="assets/factory-4.png" alt="필터 공장 4" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-shrink-0 w-[85%] aspect-video bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden snap-center">
+                                <img src="assets/factory-5.png" alt="필터 공장 5" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-shrink-0 w-[85%] aspect-video bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden snap-center">
+                                <img src="assets/factory-6.png" alt="필터 공장 6" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .scrollbar-hide::-webkit-scrollbar { display: none; }
+                    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+                </style>
+            </div>
+            <div class="border-y border-white/10 py-16 mb-24 bg-white/5 rounded-[40px] px-6">
+                <div class="text-center mb-10">
+                    <h4 class="text-2xl md:text-3xl font-black text-white mb-3 tracking-tight">국가가 먼저 인정한 제조 기술력</h4>
+                    <p class="text-slate-400 text-sm md:text-base">까다로운 공공 발주 기준을 완벽히 충족하는 다올웍스의 공식 인증 내역입니다.</p>
+                </div>
+                
+                <div class="w-full max-w-5xl mx-auto bg-white rounded-2xl p-6 md:p-10 shadow-lg flex items-center justify-center">
+                    <img src="assets/cert-all.jpg" alt="다올웍스 공식 인증 내역 (KS인증, 특허, 조달우수제품 등)" class="w-full h-auto object-contain">
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-20">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl font-black text-white mb-4">다올웍스의 약속</h3>
+                    <p class="text-slate-400">제조사의 기술력으로 고객에게 제공하는 3가지 핵심 가치</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="group border border-slate-700 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 bg-slate-800/50">
+                        <div class="aspect-[4/3] bg-slate-800 relative overflow-hidden flex flex-col items-center justify-center text-slate-500">
+                            <i class="fa-solid fa-handshake text-4xl mb-2"></i>
+                            <p class="font-bold">[이미지: pillar-1.jpg]</p>
+                            </div>
+                        <div class="p-8 text-center md:text-left">
+                            <h4 class="text-xl font-bold text-white mb-4 flex items-center justify-center md:justify-start gap-2">
+                                <i class="fa-regular fa-square-check text-blue-400"></i> 비용 절감
+                            </h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                경쟁사 대비 최대 30~40% 저렴한 공급가 제안<br>
+                                유지보수 서비스 포함 계약으로 전체 운영비 절감
+                            </p>
+                        </div>
+                    </div>
+                    <div class="group border border-slate-700 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 bg-slate-800/50">
+                        <div class="aspect-[4/3] bg-slate-800 relative overflow-hidden flex flex-col items-center justify-center text-slate-500">
+                            <i class="fa-solid fa-file-contract text-4xl mb-2"></i>
+                            <p class="font-bold">[이미지: pillar-2.jpg]</p>
+                            </div>
+                        <div class="p-8 text-center md:text-left">
+                            <h4 class="text-xl font-bold text-white mb-4 flex items-center justify-center md:justify-start gap-2">
+                                <i class="fa-regular fa-square-check text-blue-400"></i> 성능 및 인증
+                            </h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                공기여과 효율, 압력손실, 내구성 등 시험성적서 제출 가능<br>
+                                → 품질·성능의 객관적 검증 자료 확보
+                            </p>
+                        </div>
+                    </div>
+                    <div class="group border border-slate-700 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 bg-slate-800/50">
+                        <div class="aspect-[4/3] bg-slate-800 relative overflow-hidden flex flex-col items-center justify-center text-slate-500">
+                            <i class="fa-solid fa-chart-line text-4xl mb-2"></i>
+                            <p class="font-bold">[이미지: pillar-3.jpg]</p>
+                            </div>
+                        <div class="p-8 text-center md:text-left">
+                            <h4 class="text-xl font-bold text-white mb-4 flex items-center justify-center md:justify-start gap-2">
+                                <i class="fa-regular fa-square-check text-blue-400"></i> 공기질 기준 대응
+                            </h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                국내 실내공기질 유지·관리 기준에 따른<br>
+                                미세먼지 및 건강관련 오염물질 관리 지원 가능
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="mb-16 text-center">
                 <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">OUR SERVICES</h2>
-                <p class="text-slate-600">원하시는 서비스를 클릭하여 상세한 케어 프로세스를 확인해 보세요.</p>
+                <p class="text-slate-600">다올웍스만의 전문적인 케어 프로세스를 확인해 보세요.</p>
             </div>
 
             <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
@@ -198,7 +359,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = mobileMenuBtn.querySelector('i');
@@ -208,7 +368,6 @@
                 menuIcon.className = isHidden ? 'fa-solid fa-bars' : 'fa-solid fa-times';
             });
 
-            // PC Version toggle
             const viewport = document.querySelector('meta[name="viewport"]');
             const toggleBtn = document.getElementById('pc-version-toggle');
 
@@ -233,7 +392,6 @@
                 setViewport(true);
             }
 
-            // 플로팅 버튼 위로 가기 스크립트 추가
             const scrollToTopBtn = document.getElementById('scrollToTopBtn');
             if (scrollToTopBtn) {
                 window.addEventListener('scroll', () => {
